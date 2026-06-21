@@ -1,0 +1,294 @@
+body {
+    background-color: #1E1B14;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+/* --- SEÇÃO 1: CABEÇALHO --- */
+.titulo {
+    display: flex;
+    background-color: #3A3030;
+    align-items: center;
+    color: white;
+    height: 60px;
+    border-radius: 35px;
+    border: 2px solid #745400;
+    padding: 0 25px;
+}
+
+.titulo p {
+    margin: 0;
+    cursor: pointer;
+}
+
+.logo {
+    height: 50px;
+    width: 150px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.pt-br {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #574949;
+    border: 1.5px solid #745400;
+    border-radius: 12px;
+    padding: 6px 12px;
+}
+
+.pt {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.brasil {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* --- SEÇÃO 2: HISTÓRIA --- */
+.historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.texto {
+    width: 50%;
+    margin: 0;
+}
+
+.texto_foda {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.lorem {
+    text-align: left;
+    color: white;
+    margin: 0;
+}
+
+.div_img {
+    width: 30%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0;
+}
+
+/* --- SEÇÃO 3: BOTÕES --- */
+.sec3 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;              
+    margin-top: 50px;       
+}
+
+.div_contato {
+    background-color: white;
+    padding: 0 24px;         
+    height: 42px;           
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 12px;     
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    cursor: pointer;
+}
+
+.div_produtos {
+    background-color: #cca01d;
+    padding: 0 24px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 12px;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.produtos {
+    color: white;
+    margin: 0;              
+}
+
+.contato {
+    color: black;
+    margin: 0;              
+}
+
+/* --- SEÇÃO 4: PROTEINS EM AÇÃO (NOVA) --- */
+.em_acao {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.titulo_acao {
+    color: white;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.destaque_amarelo {
+    color: #cca01d;
+    font-weight: bold;
+}
+
+.grid_acao {
+    display: table;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card_grande, .card_galeria {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    background-color: #332A24;
+    border: 1px solid #473B33;
+    border-radius: 12px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+/* Separação visual das duas colunas usando margem simulada */
+.card_grande {
+    border-right: 15px solid #1E1B14;
+}
+
+.card_galeria {
+    border-left: 15px solid #1E1B14;
+}
+
+/* Card Esquerdo Conteúdo */
+.container_video {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 240px;
+    background-color: #000;
+}
+
+.container_video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.botao_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 35px solid white;
+    cursor: pointer;
+}
+
+.card_grande h3 {
+    color: white;
+    font-size: 28px;
+    text-align: left;
+    margin: 20px 0 10px 0;
+}
+
+.card_grande p {
+    color: #A3968E;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Card Direito Conteúdo */
+.banner_marcas {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.banner_marcas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- LINHA HORIZONTAL ALTERADA --- */
+.linha_divisoria {
+    border: none;
+    height: 2px;
+    background-color: #cca01d; /* Mesma cor dourada do seu projeto */
+    margin: 25px 0;
+}
+
+.lista_miniaturas {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.lista_miniaturas img {
+    display: inline-block;
+    width: 28%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 2.5%;
+}
+
+/* --- RODAPÉ --- */
+.rodape {
+    margin-top: 80px;
+    border-top: 1px solid #332A24;
+    padding-top: 20px;
+    color: #A3968E;
+    font-size: 13px;
+    display: table;
+    width: 100%;
+}
+
+.rodape p {
+    display: table-cell;
+    width: 50%;
+    margin: 0;
+}
+
+.rodape .direitos {
+    text-align: right;
+    color: #cca01d;
+}
+.linha{
+    margin-top: 100px;
+    background-color: yellow;
+}
